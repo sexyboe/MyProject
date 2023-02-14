@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.sideheader {
+  background-color: rgb(159, 142, 119);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.top-part {
+  background-color: aliceblue;
+}
+
+.top-part-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sideheader ul {
+  list-style-type: lower-alpha;
+  list-style-position: outside;
+  /* list-style-image: url("../img/Eternals.webp"); */
+}
+
+.i img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.navbar {
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.nav-item a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 1rem;
+}
+
+.drop-item a {
+  display: block;
+}
+
+.drop-item {
+  background-color: rgb(72, 72, 88);
+  display: none;
+  position: absolute;
+  top: 150px;
+}
+
+.dropdown:hover .drop-item {
+  display: block;
+}
+
+.nav-item a:hover,
+.dropdown:hover .drop-btn {
+  background-color: rgb(17, 17, 210);
+}
+
+/* overflow */
+.overflow {
+  font-family: "Source Code Pro", monospace;
+  width: 100%;
+  height: 300px;
+  overflow: scroll;
+  border: 1px solid black;
+  /* background-color: azure; */
+  text-align: justify;
+  padding: 1rem;
+  color: red;
+  direction: rtl;
+  /* text-decoration-line: overline; */
+  text-align-last: left;
+  word-spacing: 4px;
+  white-space: 1px;
+  text-shadow: 1px 1px 3px red;
+  text-indent: 60px;
+  letter-spacing: 1px;
+  line-height: 1.3;
+  outline: 1px solid green;
+}
+
+.overflow h1 {
+  font-size: 4rem;
+
+  text-shadow: 3px 3px 6px green;
+}
+/* overflow */
+
+.f {
+  color: rgb(43, 0, 255) !important;
+  font-size: 2rem;
+  border: none;
+}
+.fa-facebook {
+  color: red;
+  font-size: 2rem;
+  border: none;
+}
+
+.marks {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  width: 50%;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+  border-collapse: collapse;
+  font-family: "Source Code Pro", monospace;
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+  text-align: center;
+}
+
+.fa-search {
+  cursor: pointer;
+}
+
+.fa-times {
+  color: red;
+}
+
+.fa-check {
+  color: green;
+}

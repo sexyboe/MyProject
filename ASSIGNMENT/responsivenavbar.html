@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive nav bar</title>
+
+    <script src="https://kit.fontawesome.com/bec81950a7.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <style>
+        .navbar {
+
+            background: #000;
+        }
+
+        .navbar a {
+
+            text-decoration: none;
+            padding: 1rem;
+            color: #fff;
+            display: inline-block;
+        }
+
+        .navbar a.icon {
+            display: none;
+
+
+        }
+
+        .active {
+            background-color: green;
+        }
+
+
+        @media screen and (max-width:600px) {
+
+
+            .navbar a:not(:first-child) {
+
+                display: none;
+            }
+
+            .navbar a.icon {
+
+                display: block;
+                float: right;
+            }
+
+
+
+        }
+
+
+        @media screen and (max-width:600px) {
+            .navbar.responsive {
+                position: relative;
+
+            }
+
+            .navbar.responsive .icon {
+
+                position: absolute;
+                top: 0%;
+                right: 0%;
+
+            }
+
+            .navbar.responsive a {
+                display: block;
+                float: none;
+                text-align: left;
+
+            }
+
+
+
+
+        }
+    </style>
+    <header>
+
+        <nav id="nav" class="navbar">
+            <a href="#" class="active"> home</a>
+            <a href="#"> home</a>
+            <a href="#"> home</a>
+            <a href="#"> home</a>
+            <a href="#"> home</a>
+            <a href="#" class="icon"> <i class="fa-solid fa-caret-down" onclick="MyFunction()"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+        </nav>
+    </header>
+
+
+    <script>
+
+        var nav = document.getElementById("nav");
+
+        function MyFunction() {
+            if (nav.className === "navbar") {
+                nav.className += " responsive";
+            }
+            else
+                nav.className = "navbar";
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

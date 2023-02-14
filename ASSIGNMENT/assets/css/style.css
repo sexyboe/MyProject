@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5ebe0;
+}
+
+.navigation {
+  margin: 0 50px;
+  height: 78px;
+  position: relative;
+}
+
+.logo {
+  width: 100px;
+  position: absolute;
+  top: 0;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.navbar {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  display: inline-block;
+}
+
+ul {
+  float: right;
+  list-style: none;
+  /* padding: 1rem; */
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  color: black;
+  font-size: 1.1rem;
+  padding: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* section part */
+
+.first_content {
+  height: 400px;
+  margin: 0px 50px 10px 50px;
+  background-image: url(../img/laptop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+
+.first_content .details {
+  padding-top: 100px;
+  color: white;
+}
+
+.details p {
+  margin: 20px;
+  font-size: 1.2rem;
+}
+.buttons {
+  border: none;
+  background-color: orange;
+  color: white;
+  padding: 11px 20px;
+  border-radius: 7px;
+  font-size: 1rem;
+}
+
+.buttons1 {
+  position: relative;
+}
+
+.buttons1 button {
+  border: none;
+  margin: 1.4rem;
+  padding: 0.6rem 1.5rem;
+  background-color: orange;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+/* send section */
+.second_content {
+  height: 200px;
+  background-color: rgba(198, 177, 123, 0.701);
+  margin: 0 50px;
+  text-align: center;
+}
+
+.second_content h1 {
+  padding-top: 30px;
+}
+.second_content p {
+  font-size: 1.2rem;
+  padding-top: 15px;
+}
+
+.email {
+  padding-top: 1rem;
+}
+
+.email input[type="text"] {
+  border: none;
+  padding: 13px 20px;
+  border-radius: 7px;
+}
+.email input[type="button"] {
+  position: relative;
+  left: -14px;
+}
+
+/* send section */
+
+/* discover_section */
+
+.third_section {
+  margin: 0 50px;
+}
+
+.third_container {
+  width: 33%;
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.third_container img {
+  width: 100%;
+}
+
+.third_details {
+  position: absolute;
+  right: 0;
+}
+
+.third_button {
+  position: absolute;
+  right: 0;
+}
+
+/* discover_section */
+
+/* fourth section */
+
+.fourth_section {
+  margin: 10px 50px;
+}
+
+.fourth_content {
+  position: relative;
+  width: 48%;
+}
+.fourth_content img {
+  width: 100%;
+}
+
+.fourth_details {
+  position: absolute;
+  right: 0;
+}
+.fourth_button {
+  position: absolute;
+  right: 0;
+}
+
+/* section part */

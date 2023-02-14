@@ -1,0 +1,47 @@
+*{
+margin: 0;
+}
+
+.child{
+    height: 300px;
+    width: 300px;
+    border: solid red;
+    /* position: fixed; */
+    position: absolute;
+    text-align: justify;
+    display: flex;
+ 
+ align-items: center;
+
+}
+
+
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    top: 0;
+    border: solid rgb(140, 255, 0);
+
+}
+
+p{
+    padding: 1rem;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
+    /* z-index: -1; */
+}
+
+.heading{
+    padding: 1rem;
+    background-color: rgb(203, 159, 182);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}

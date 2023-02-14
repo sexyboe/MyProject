@@ -1,0 +1,43 @@
+* {
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.gallery_section {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.gallery img {
+  width: 50%;
+}
+
+.gallery {
+  flex-shrink: 1;
+  padding: 1rem;
+}
+
+.galleryq {
+  flex-grow: 1;
+}
+
+.f {
+  display: flex;
+}
+
+.g img {
+  width: 100%;
+  height: auto;
+}
+
+.h img {
+  width: 100%;
+  height: auto;
+}
+
+.g {
+  flex-grow: 1;
+}
+.h {
+  flex-shrink: 9;
+}

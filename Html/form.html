@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="assets/js/min.js"></script>
+    <title>Form</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Login in form</h1>
+    </div>
+
+    <div class="form_container">
+        <form action="#" autocomplete="off" onsubmit=return(FormValidation()) name="myform">
+            <label for="fname" onfocus="colour(this)">First name</label>
+            <input type="text" id="fname" name="fname" />
+            <span id="fmessage"></span>
+
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" />
+            <span id="lmessage"></span>
+
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="number" />
+            <span id="numbermessage"></span>
+
+            <label for="email"> Email</label>
+            <input type="email" id="email" name="email">
+            <span id="emailmessage"></span>
+
+            <label for="password">Pasword</label>
+            <input type="password" id="password" name="password" />
+            <span id="passwordmessage"></span>
+
+            <label for="cpassword">Confirm Pasword</label>
+            <input type="cpassword" id="cpassword" name="cpassword" />
+            <span id="cpasswordmessage"></span>
+
+            <label for="experience"> Experience</label>
+            <select name="experience" id="experience">
+                <option value="good">Good</option>
+                <option value="bad">Bad</option>
+                <option value="ok">Ok</option>
+            </select>
+            <span id="experience-message"></span>
+
+
+            <label for="gender"> Gender</label>
+            <label for="male"> Male</label>
+
+            <input type="radio" id="male" name="gender">
+            <label for="female"> Female</label>
+            <input type="radio" id="female" name="gender">
+            <span id="gerder-message"></span>
+
+
+
+            <input type="submit" class="btn-submit">
+        </form>
+    </div>
+
+    <!-- &lt;h1&gt;dd&lt;/h&gt;> -->
+    <!-- &lt;h1&gt;dd&lt;/h&gt;> -->
+    <!-- &lt;h1&gt;dd&lt;/h&gt;> -->
+</body>
+
+<style>
+    * {
+
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+
+    span {
+        color: red;
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    h1 {
+        color: rgb(48, 126, 194);
+
+    }
+
+    .form_container {
+        background: rgb(16, 8, 93);
+        background: linear-gradient(144deg, rgba(16, 8, 93, 0.6971580868675595) 23%, rgba(7, 1, 47, 1) 45%, rgba(113, 70, 252, 0.6663457619375875) 96%);
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 40px;
+        position: absolute;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-48%, -48%);
+    }
+
+    form {
+        display: flex;
+        row-gap: 5px;
+        padding: 15px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    input {
+        padding: 1em;
+        border-color: rgb(225, 225, 225);
+        border-radius: 15px;
+        color: white;
+        font-size: 1.1em;
+        width: 300px;
+        transition: 0.3s ease-in-out;
+        font-weight: 200;
+        background: rgb(48, 147, 203);
+        background: linear-gradient(227deg, rgba(48, 147, 203, 1) 0%, rgba(0, 212, 255, 1) 45%, rgba(8, 102, 194, 0.603415559772296) 47%, rgba(21, 151, 204, 1) 96%);
+    }
+
+    input:focus {
+
+        background: rgb(48, 147, 203);
+        background: linear-gradient(308deg, rgba(48, 147, 203, 1) 0%, rgba(8, 102, 194, 0.603415559772296) 47%, rgba(0, 212, 255, 1) 48%, rgba(21, 151, 204, 1) 95%);
+    }
+
+    select {
+        background: rgb(48, 147, 203);
+        background: linear-gradient(227deg, rgba(48, 147, 203, 1) 0%, rgba(0, 212, 255, 1) 45%, rgba(8, 102, 194, 0.603415559772296) 47%, rgba(21, 151, 204, 1) 96%);
+
+    }
+
+    select:focus {
+        background: rgb(48, 147, 203);
+        background: linear-gradient(308deg, rgba(48, 147, 203, 1) 0%, rgba(8, 102, 194, 0.603415559772296) 47%, rgba(0, 212, 255, 1) 48%, rgba(21, 151, 204, 1) 95%);
+
+    }
+
+
+    form label {
+        font-size: 1.2rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+</style>
+
+<script>
+
+    function colour(x) {
+        x.style.background = " rgb(48,147,203)";
+        x.style.background = " linear-gradient(308deg, rgba(48,147,203,1) 0%, rgba(8,102,194,0.603415559772296) 47%, rgba(0,212,255,1) 48%, rgba(21,151,204,1) 95%)";
+
+    }
+</script>
+
+</html>

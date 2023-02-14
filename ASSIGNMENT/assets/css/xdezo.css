@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #999;
+}
+
+.navigation {
+  overflow: hidden;
+  vertical-align: center;
+}
+
+.nav_section {
+}
+
+.logo {
+  width: 10%;
+  float: left;
+}
+
+.nav_item ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  padding: 1rem;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.nav_item li {
+  display: inline-block;
+}
+
+.nav_item {
+  width: 90%;
+  float: right;
+}
+
+.gallery {
+  overflow: hidden;
+}
+
+.gallery_item {
+  width: 33.33%;
+  float: right;
+  padding: 1rem;
+}
+
+.gallery_item img {
+  width: 100%;
+}
+
+.title {
+  text-align: right;
+  float: right;
+}
+
+/* top */
+
+.bg_section {
+  padding: 10px 40px 10px 40px;
+}
+
+.top {
+  padding: 150px;
+  background-image: url("../img/laptop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.top_details {
+  text-align: center;
+  padding: 20px;
+}
+.top_details p {
+  font-size: 1.2rem;
+}
+.top_details h1 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.buttons {
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  background-color: orange;
+  padding: 0.4rem 1.2rem;
+  border-radius: 5px;
+}
+
+.button_pad {
+  display: inline-block;
+  padding: 1rem;
+}
+
+.input_now {
+  padding: 10px 40px;
+}
+
+.send {
+  background-color: bisque;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.send h1 {
+  padding-bottom: 2rem;
+}
+
+.send p {
+  padding-bottom: 2rem;
+}
+
+.inputs .btn_right {
+  position: relative;
+  right: 1rem;
+}
+
+.gallery_content {
+  padding: 0 23px;
+}
+
+.inputs input[type="text"] {
+  border: none;
+  padding: 0.7rem;
+  border-radius: 5px;
+}
+
+/* top */
+
+/* note: ccenter for only block illement */
+
+/* media query */
+
+@media screen and (max-width: 600px) {
+  .nav_section {
+    width: 100%;
+  }
+
+  .nav_item li {
+    display: block;
+    padding: 1rem 0;
+  }
+
+  .logo {
+    padding-left: 1rem;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery_item {
+    width: 100%;
+  }
+
+  .title {
+  }
+  .top {
+    width: 100%;
+    padding: 40px;
+  }
+
+  .top_details p {
+    font-size: 1rem;
+  }
+  .top_details h1 {
+    font-size: 1.2rem;
+  }
+
+  .top {
+    /* background-size: 100%; */
+  }
+}
+
+@media screen and (max-width: 852px) {
+  .top {
+    padding: 2rem;
+    background-size: 100%;
+  }
+}
+@media screen and (max-width: 488px) {
+  .top {
+    padding: 1rem;
+    background-size: 100%;
+  }
+}
